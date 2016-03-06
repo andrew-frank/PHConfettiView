@@ -13,12 +13,12 @@
 		FE58A4D21C8C82D20083DFB1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE58A4D01C8C82D20083DFB1 /* Main.storyboard */; };
 		FE58A4D41C8C82D20083DFB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE58A4D31C8C82D20083DFB1 /* Assets.xcassets */; };
 		FE58A4D71C8C82D30083DFB1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE58A4D51C8C82D30083DFB1 /* LaunchScreen.storyboard */; };
-		FE58A4E11C8C83560083DFB1 /* PHConfettiView.m in Sources */ = {isa = PBXBuildFile; fileRef = FE58A4E01C8C83560083DFB1 /* PHConfettiView.m */; };
 		FE58A4ED1C8CA19F0083DFB1 /* ConfettiImages.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FE58A4EC1C8CA19F0083DFB1 /* ConfettiImages.bundle */; };
+		FE58A4EF1C8CA9A60083DFB1 /* PHConfettiView.m in Sources */ = {isa = PBXBuildFile; fileRef = FE58A4EE1C8CA9A60083DFB1 /* PHConfettiView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		FE58A4C41C8C82D10083DFB1 /* PHConfettiView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PHConfettiView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE58A4C41C8C82D10083DFB1 /* PHConfettiViewExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PHConfettiViewExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE58A4C81C8C82D20083DFB1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FE58A4CA1C8C82D20083DFB1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FE58A4CB1C8C82D20083DFB1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -28,9 +28,9 @@
 		FE58A4D31C8C82D20083DFB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE58A4D61C8C82D30083DFB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FE58A4D81C8C82D30083DFB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FE58A4DF1C8C83560083DFB1 /* PHConfettiView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PHConfettiView.h; path = Classes/PHConfettiView.h; sourceTree = SOURCE_ROOT; };
-		FE58A4E01C8C83560083DFB1 /* PHConfettiView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PHConfettiView.m; path = Classes/PHConfettiView.m; sourceTree = SOURCE_ROOT; };
-		FE58A4EC1C8CA19F0083DFB1 /* ConfettiImages.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = ConfettiImages.bundle; path = Classes/ConfettiImages.bundle; sourceTree = SOURCE_ROOT; };
+		FE58A4DF1C8C83560083DFB1 /* PHConfettiView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PHConfettiView.h; sourceTree = "<group>"; };
+		FE58A4EC1C8CA19F0083DFB1 /* ConfettiImages.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ConfettiImages.bundle; sourceTree = "<group>"; };
+		FE58A4EE1C8CA9A60083DFB1 /* PHConfettiView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PHConfettiView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,7 +47,7 @@
 		FE58A4BB1C8C82D10083DFB1 = {
 			isa = PBXGroup;
 			children = (
-				FE58A4C61C8C82D10083DFB1 /* PHConfettiView */,
+				FE58A4C61C8C82D10083DFB1 /* PHConfettiViewExample */,
 				FE58A4C51C8C82D10083DFB1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -55,12 +55,12 @@
 		FE58A4C51C8C82D10083DFB1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FE58A4C41C8C82D10083DFB1 /* PHConfettiView.app */,
+				FE58A4C41C8C82D10083DFB1 /* PHConfettiViewExample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FE58A4C61C8C82D10083DFB1 /* PHConfettiView */ = {
+		FE58A4C61C8C82D10083DFB1 /* PHConfettiViewExample */ = {
 			isa = PBXGroup;
 			children = (
 				FE58A4DE1C8C82F20083DFB1 /* PHConfettiView */,
@@ -74,7 +74,7 @@
 				FE58A4D81C8C82D30083DFB1 /* Info.plist */,
 				FE58A4C71C8C82D10083DFB1 /* Supporting Files */,
 			);
-			path = PHConfettiView;
+			path = PHConfettiViewExample;
 			sourceTree = "<group>";
 		};
 		FE58A4C71C8C82D10083DFB1 /* Supporting Files */ = {
@@ -90,17 +90,18 @@
 			children = (
 				FE58A4EC1C8CA19F0083DFB1 /* ConfettiImages.bundle */,
 				FE58A4DF1C8C83560083DFB1 /* PHConfettiView.h */,
-				FE58A4E01C8C83560083DFB1 /* PHConfettiView.m */,
+				FE58A4EE1C8CA9A60083DFB1 /* PHConfettiView.m */,
 			);
 			name = PHConfettiView;
+			path = ../PHConfettiView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FE58A4C31C8C82D10083DFB1 /* PHConfettiView */ = {
+		FE58A4C31C8C82D10083DFB1 /* PHConfettiViewExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FE58A4DB1C8C82D30083DFB1 /* Build configuration list for PBXNativeTarget "PHConfettiView" */;
+			buildConfigurationList = FE58A4DB1C8C82D30083DFB1 /* Build configuration list for PBXNativeTarget "PHConfettiViewExample" */;
 			buildPhases = (
 				FE58A4C01C8C82D10083DFB1 /* Sources */,
 				FE58A4C11C8C82D10083DFB1 /* Frameworks */,
@@ -110,9 +111,9 @@
 			);
 			dependencies = (
 			);
-			name = PHConfettiView;
+			name = PHConfettiViewExample;
 			productName = PHConfettiView;
-			productReference = FE58A4C41C8C82D10083DFB1 /* PHConfettiView.app */;
+			productReference = FE58A4C41C8C82D10083DFB1 /* PHConfettiViewExample.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -129,7 +130,7 @@
 					};
 				};
 			};
-			buildConfigurationList = FE58A4BF1C8C82D10083DFB1 /* Build configuration list for PBXProject "PHConfettiView" */;
+			buildConfigurationList = FE58A4BF1C8C82D10083DFB1 /* Build configuration list for PBXProject "PHConfettiViewExample" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -142,7 +143,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FE58A4C31C8C82D10083DFB1 /* PHConfettiView */,
+				FE58A4C31C8C82D10083DFB1 /* PHConfettiViewExample */,
 			);
 		};
 /* End PBXProject section */
@@ -168,7 +169,7 @@
 			files = (
 				FE58A4CF1C8C82D20083DFB1 /* ViewController.m in Sources */,
 				FE58A4CC1C8C82D20083DFB1 /* AppDelegate.m in Sources */,
-				FE58A4E11C8C83560083DFB1 /* PHConfettiView.m in Sources */,
+				FE58A4EF1C8CA9A60083DFB1 /* PHConfettiView.m in Sources */,
 				FE58A4C91C8C82D20083DFB1 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -279,7 +280,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = PHConfettiView/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/PHConfettiViewExample/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.AAmake.PHConfettiView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -290,7 +291,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = PHConfettiView/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/PHConfettiViewExample/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.AAmake.PHConfettiView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -300,7 +301,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FE58A4BF1C8C82D10083DFB1 /* Build configuration list for PBXProject "PHConfettiView" */ = {
+		FE58A4BF1C8C82D10083DFB1 /* Build configuration list for PBXProject "PHConfettiViewExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FE58A4D91C8C82D30083DFB1 /* Debug */,
@@ -309,13 +310,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FE58A4DB1C8C82D30083DFB1 /* Build configuration list for PBXNativeTarget "PHConfettiView" */ = {
+		FE58A4DB1C8C82D30083DFB1 /* Build configuration list for PBXNativeTarget "PHConfettiViewExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FE58A4DC1C8C82D30083DFB1 /* Debug */,
 				FE58A4DD1C8C82D30083DFB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
