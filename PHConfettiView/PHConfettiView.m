@@ -129,7 +129,7 @@
     confetti.lifetime = 14.0 * self.intensity * 2.2;
     confetti.lifetimeRange = 0;
     confetti.color = color.CGColor;
-    confetti.velocity = (CGFloat)350.0 * self.intensity / 2;
+    confetti.velocity = (CGFloat)350.0 * self.intensity / 2.3;
     confetti.velocityRange = (CGFloat)80.0 * self.intensity;
     confetti.emissionLongitude = (CGFloat)M_PI;
     confetti.emissionRange = (CGFloat)M_PI_4;
