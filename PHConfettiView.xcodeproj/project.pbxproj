@@ -13,6 +13,8 @@
 		FE58A4D21C8C82D20083DFB1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE58A4D01C8C82D20083DFB1 /* Main.storyboard */; };
 		FE58A4D41C8C82D20083DFB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE58A4D31C8C82D20083DFB1 /* Assets.xcassets */; };
 		FE58A4D71C8C82D30083DFB1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE58A4D51C8C82D30083DFB1 /* LaunchScreen.storyboard */; };
+		FE58A4E11C8C83560083DFB1 /* PHConfettiView.m in Sources */ = {isa = PBXBuildFile; fileRef = FE58A4E01C8C83560083DFB1 /* PHConfettiView.m */; };
+		FE58A4ED1C8CA19F0083DFB1 /* ConfettiImages.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FE58A4EC1C8CA19F0083DFB1 /* ConfettiImages.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,9 @@
 		FE58A4D31C8C82D20083DFB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE58A4D61C8C82D30083DFB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FE58A4D81C8C82D30083DFB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE58A4DF1C8C83560083DFB1 /* PHConfettiView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PHConfettiView.h; path = Classes/PHConfettiView.h; sourceTree = SOURCE_ROOT; };
+		FE58A4E01C8C83560083DFB1 /* PHConfettiView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PHConfettiView.m; path = Classes/PHConfettiView.m; sourceTree = SOURCE_ROOT; };
+		FE58A4EC1C8CA19F0083DFB1 /* ConfettiImages.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = ConfettiImages.bundle; path = Classes/ConfettiImages.bundle; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +63,7 @@
 		FE58A4C61C8C82D10083DFB1 /* PHConfettiView */ = {
 			isa = PBXGroup;
 			children = (
+				FE58A4DE1C8C82F20083DFB1 /* PHConfettiView */,
 				FE58A4CA1C8C82D20083DFB1 /* AppDelegate.h */,
 				FE58A4CB1C8C82D20083DFB1 /* AppDelegate.m */,
 				FE58A4CD1C8C82D20083DFB1 /* ViewController.h */,
@@ -77,6 +83,16 @@
 				FE58A4C81C8C82D20083DFB1 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FE58A4DE1C8C82F20083DFB1 /* PHConfettiView */ = {
+			isa = PBXGroup;
+			children = (
+				FE58A4EC1C8CA19F0083DFB1 /* ConfettiImages.bundle */,
+				FE58A4DF1C8C83560083DFB1 /* PHConfettiView.h */,
+				FE58A4E01C8C83560083DFB1 /* PHConfettiView.m */,
+			);
+			name = PHConfettiView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +155,7 @@
 				FE58A4D71C8C82D30083DFB1 /* LaunchScreen.storyboard in Resources */,
 				FE58A4D41C8C82D20083DFB1 /* Assets.xcassets in Resources */,
 				FE58A4D21C8C82D20083DFB1 /* Main.storyboard in Resources */,
+				FE58A4ED1C8CA19F0083DFB1 /* ConfettiImages.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,6 +168,7 @@
 			files = (
 				FE58A4CF1C8C82D20083DFB1 /* ViewController.m in Sources */,
 				FE58A4CC1C8C82D20083DFB1 /* AppDelegate.m in Sources */,
+				FE58A4E11C8C83560083DFB1 /* PHConfettiView.m in Sources */,
 				FE58A4C91C8C82D20083DFB1 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
