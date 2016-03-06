@@ -20,6 +20,7 @@ typedef enum : NSUInteger {
 
 @property (nonatomic, strong) NSArray *colors;
 @property (nonatomic, assign) CGFloat intensity;
+@property (nonatomic, assign) CGFloat birthRate;
 @property (nonatomic, assign) PHConfettiType type;
 @property (nonatomic, strong) UIImage *customImage;
 

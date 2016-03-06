@@ -19,11 +19,28 @@
 
 @implementation PHConfettiView
 
+#pragma mark - Properties
+
+-(void)setBirthRate:(CGFloat)birthRate
+{
+    if(birthRate == _birthRate)
+        return;
+    
+    _birthRate = birthRate;
+    self.emitter.birthRate = _birthRate;
+}
+
 #pragma mark - Lifecycle
 
 -(instancetype)initWithCoder:(NSCoder *)aDecoder
 {
-    return [super initWithCoder:aDecoder];
+    self = [super initWithCoder:aDecoder];
+    if(!self)
+        return nil;
+    
+    [self setupConfetti];
+
+    return self;
 }
 
 -(instancetype)initWithFrame:(CGRect)frame
@@ -32,6 +49,13 @@
     if(!self)
         return nil;
     
+    [self setupConfetti];
+    
+    return self;
+}
+
+-(void)setupConfetti
+{
     self.colors = @[[UIColor colorWithRed:0.95 green:0.40 blue:0.27 alpha:1.0],
                     [UIColor colorWithRed:1.00 green:0.78 blue:0.36 alpha:1.0],
                     [UIColor colorWithRed:0.48 green:0.78 blue:0.64 alpha:1.0],
@@ -39,9 +63,8 @@
                     [UIColor colorWithRed:0.58 green:0.39 blue:0.55 alpha:1.0]];
     
     self.intensity = 0.5;
+    self.birthRate = 1;
     self.type = PHConfettiTypeConfetti;
-    
-    return self;
 }
 
 
@@ -84,7 +107,7 @@
     [self.layer addSublayer:self.emitter];
     */
     
-    self.emitter.birthRate = 1;
+    self.emitter.birthRate = self.birthRate;
     self.isRaining = YES;
 }
 
@@ -102,11 +125,11 @@
 {
     CAEmitterCell *confetti = [CAEmitterCell new];
     
-    confetti.birthRate = 6.0 * self.intensity;
-    confetti.lifetime = 14.0 * self.intensity;
+    confetti.birthRate = 6.0 * self.intensity / 2;
+    confetti.lifetime = 14.0 * self.intensity * 2.2;
     confetti.lifetimeRange = 0;
     confetti.color = color.CGColor;
-    confetti.velocity = (CGFloat)350.0 * self.intensity;
+    confetti.velocity = (CGFloat)350.0 * self.intensity / 2;
     confetti.velocityRange = (CGFloat)80.0 * self.intensity;
     confetti.emissionLongitude = (CGFloat)M_PI;
     confetti.emissionRange = (CGFloat)M_PI_4;
